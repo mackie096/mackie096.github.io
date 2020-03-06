@@ -1,0 +1,127 @@
+a:link{text-decoration: none;}
+a:hover{color: red;}
+a{color: black;}
+.productbody{background-image: url("productbackground.jpg");background-position: center; background-repeat: none; background-size:cover;}
+.indexbody{background-image: url("b.jpg");}
+.aboutbody{background-color: lightgreen;}
+.faqbody{background-image: url("faqs.jpg"); background-position: center;}
+.contactbody{background-image: url("Contactus.jpg"); background-repeat: none; background-size: cover;}
+.servicebody{background-image: url("services.jpg"); background-repeat: no-repeat; background-size: cover; background-position: center;}
+div.lightgray{opacity: .9; filter: alpha(opacity=90); background-color: lightgray; width: 900px; margin: 50px; padding: 50px;}
+div.lightblue{opacity: .95; filter: alpha(opacity=99); background-color: lightblue; width: 900px; margin: 50px; padding: 50px;}
+label.radiolabel{ font-weight:normal; display:inline;}
+.center {  margin: auto;  width: 60%;   padding: 10px;}
+button[type=submit] {
+    background-color: #4CAF50;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button [type=submit]:hover {
+    background-color: #45a049;
+}
+.cont_order input{
+	margin-bottom:5px;
+}
+.cont_order p{
+	padding-top:5px;
+	}
+div#totalPrice
+{
+    padding:10px;
+    font-weight:bold;
+    background-color:#ff0;
+}
+input[type=submit] {
+    background-color: #4CAF50;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+input[type=submit]:hover {
+    background-color: #45a049;
+}
+input[type=text], select, textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+}
+input[type=text], select, textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+}
+
+input[type=submit] {
+    background-color: #4CAF50;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+input[type=submit]:hover {
+    background-color: #45a049;
+}
+.containerser {
+    position: relative;
+    width: 50%;
+}
+.image {  opacity: 1;  display: block; width: 100%; height: auto; transition: .5s ease; backface-visibility: hidden;}
+.middle {transition: .5s ease; opacity: 0; position: absolute; top: 50%; left: 100%; width: 150%; transform: translate(-50%, -50%); -ms-transform: translate(-50%, -50%);
+ text-align: center;
+}
+.containerser:hover .image {  opacity: 0.3;}
+
+.containerser:hover .middle {
+  opacity: 1;
+}
+
+.text {
+  background-color: #4CAF50;
+  color: white;
+  font-size: 25px;
+  padding: 5px 25px;
+}
+button[type=submit] {
+    background-color: #4CAF50;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button[type=submit]:hover {
+    background-color: #45a049;
+}
+.container{position:relative}
+.bcontainer:after,.bcontainer:before{content:"";display:table;clear:both}
+.content{max-width:980px;margin:auto}
+.bottomleft{position:absolute;left:0;bottom:0}
+.container:hover .w3-display-hover{display:block}.container:hover span
+.bcontainer,{padding:0.01em 16px}.w3-panel{margin-top:16px;margin-bottom:16px}
+.fading{animation:fading 10s infinite}@keyframes fading{0%{opacity:0}50%{opacity:1}100%{opacity:0}}
+.top{position:relative;animation:animatetop 0.4s}@keyframes animatetop{from{top:-300px;opacity:0} to{top:0;opacity:1}}
+.left{position:relative;animation:animateleft 0.4s}@keyframes animateleft{from{left:-300px;opacity:0} to{left:0;opacity:1}}
+.right{position:relative;animation:animateright 0.4s}@keyframes animateright{from{right:-300px;opacity:0} to{right:0;opacity:1}}
+.bottom{position:relative;animation:animatebottom 0.4s}@keyframes animatebottom{from{bottom:-300px;opacity:0} to{bottom:0;opacity:1}}
+.padding-16{padding-top:16px!important;padding-bottom:16px!important}
+.black{color:#fff!important;background-color:#000!important;font-size:30px;font-weight: bold;font-style: italic}

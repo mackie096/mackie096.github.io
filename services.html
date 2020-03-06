@@ -1,0 +1,58 @@
+<!doctype html>
+<html>
+<head>
+    <title>Mark Bonjoc</title>
+    <link href="css/mark.css" rel="stylesheet" type="text/css" />
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body class="servicebody">
+<div class="center">
+<div class="lightgray">
+<nav>
+<a href="index.html">Home</a>
+<a href="aboutus.html">AboutUs</a>
+<a href="products.html">Products</a>
+<a href="services.html">Services</a>
+<a href="faqs.html">FAQs</a>
+<a href="contactus.html">ContactUs</a></nav>
+<div>
+<div class="containerser">
+  <img src="css/repair.jpg" alt="Avatar" class="image" style="width:200%">
+  
+  <div class="middle">
+  <div class="text">Troubleshoot and repair any damages inside your house. Our 
+	service provide 100% success and we make sure that you are satisfied with our service.</div>
+  </div>
+</div>
+<form action="lamprecht.php" method="post">
+<h4>Information<h4>
+	Name: <input type="text" name="fname"></br>
+	Address: <input type="text" name="address">
+	<div>
+  <div>
+    <label for="service"><h4>Services: </h4></label>
+  </div>
+  <div>
+    <select name="service" id="service" required>
+<option value="300" selected>Electricity Faulty</option>
+<option value="150" >Heat and A/C</option>
+<option value="600" >Full house check and repair</option>
+</select>
+  </div>
+  <p id="price"></p>
+  <input type="submit" value="Submit"/>
+</div>
+</form>
+</div>
+</div>
+</div>
+<script>
+var drop = document.getElementById("service");
+var price = document.getElementById("price");
+drop.onchange = function() {
+price.innerHTML = "$" + drop.value;
+}
+</script>
+
+</body>
+</html>

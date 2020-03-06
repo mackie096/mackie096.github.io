@@ -1,0 +1,53 @@
+<!doctype html>
+<html>
+<title>Mark Bonjoc</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link href="css/mark.css" rel="stylesheet" type="text/css" /> 
+<body class="indexbody">
+<div class="content container">
+<head><h1>Lamprecht</h1></head>
+<nav>
+<a href="index.html">Home</a>
+<a href="aboutus.html">AboutUs</a>
+<a href="products.html">Products</a>
+<a href="services.html">Services</a>
+<a href="faqs.html">FAQs</a>
+<a href="contactus.html">ContactUs</a>
+</nav>
+<div class="content container">
+<div class="container mark">
+  <img class="bottom" src="css/c.jpg" style="width:100%">
+  <div class="bottomleft large bcontainer padding-16 black">
+  </div>
+</div>
+<div class="container mark">
+  <img class="fading" src="css/d.jpg" style="width:100%">
+  <div class="bottomleft large bcontainer padding-16 black">
+  </div>
+</div>
+<div class="container mark">
+  <img class="left" src="css/e.jpg" style="width:100%">
+  <div class="bottomleft large bcontainer padding-16 black">
+  </div>
+</div>
+</div>
+</div>
+<script>
+var myIndex = 0;
+markslide();
+
+function markslide() {
+    var i;
+    var x = document.getElementsByClassName("mark");
+    for (i = 0; i < x.length; i++) {
+      x[i].style.display = "none";  
+    }
+    myIndex++;
+    if (myIndex > x.length) {myIndex = 1}    
+    x[myIndex-1].style.display = "block";  
+    setTimeout(markslide, 3500);    
+}
+</script>
+
+</body>
+</html>

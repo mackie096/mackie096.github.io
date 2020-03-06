@@ -1,0 +1,51 @@
+<!doctype html>
+<html>
+<head>
+    <title>Mark Bonjoc</title>
+    <script type="text/javascript" src="js/formcalculations.js"></script>
+    <link href="css/mark.css" rel="stylesheet" type="text/css" />
+</head>
+<body class="productbody" onload='hideTotal()'>
+	<div class="center">
+        <form action="" id="Clothes" onsubmit="return false;">
+        <div class="lightblue">
+		<nav>
+		<a href="index.html">Home</a>
+		<a href="aboutus.html">AboutUs</a>
+		<a href="products.html">Products</a>
+		<a href="services.html">Services</a>
+		<a href="faqs.html">FAQs</a>
+		<a href="contactus.html">ContactUs</a></nav></br>
+            <div class="cont_order">
+               <fieldset>
+                <legend>Products!</legend>
+				Name: <input type="text" name="fname"><br>
+				Address: <input type="text" name="address"><br>
+                <label><h4>Choose your products<h4></label>
+                <label class='radiolabel'><input type="radio"  name="selectedclothe" value="t-shirt" onclick="calculateTotal()" />T-shirt ($10</label><br/>
+                <label class='radiolabel'><input type="radio"  name="selectedclothe" value="shorts" onclick="calculateTotal()" />Shorts ($12)</label><br/>
+                <label class='radiolabel'><input type="radio"  name="selectedclothe" value="jeans" onclick="calculateTotal()" />Jeans($15)</label><br/>
+  
+                <br/>
+                <label >Quantity</label>
+         
+                <select id="quantity" name='quantity' onchange="calculateTotal()">
+                <option value="None">0</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+
+               </select>
+			   
+                <br/>               
+                <div id="totalPrice"></div>
+				<button type="submit" onclick="myFunction()">Submit</button>
+                
+                </fieldset>
+            </div>
+            
+        </div>  
+       </form>
+	</div>
+</body>
+</html>
