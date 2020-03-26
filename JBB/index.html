@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link href="css/style.css" rel="stylesheet" type="text/css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<body>
+	<div class="wrapper1">
+
+		<!-- navigation bar -->
+		<div class="index-navbar">
+			<nav>
+				<ul>
+					<li>
+						<a class="navbarlink" href="index.html">Home</a>
+					</li>
+					<li>
+						<a class="navbarlink" href="service.html">Service</a>
+					</li>
+					<li>
+						<a class="navbarlink" href="Contact.html">Contact</a>
+					</li>
+				</ul>
+			</nav>
+		</div>
+
+		<!-- Login -->
+		<div class="box-login animate-left">
+			<div class="login-container">			
+		<form action="login.php">
+			
+				<div class="login-logo">
+				<img class="login-logo-size" src="images/login-logo.png">
+				</div>
+				<div class="login-text-box">
+				<i class="fa fa-user icon"></i>
+				<input class="login-textbox" type="text" placeholder="Please enter username..." name="username" required><br>
+				<i class="fa fa-key icon"></i>
+				<input class="login-textbox" type="password" placeholder="Please enter password..." name="psw" required> <br><br>
+				<label>
+      				<input type="checkbox" unchecked="checked" name="remember"> Remember me
+   				</label><br><br>
+				<button class="btn1 btn2 btn3" type="submit" style=" float: left;">Login</button>
+			</div>
+		</form>
+			<button onclick="document.getElementById('id01').style.display='block'" class="btn1 btn3 cnl">Signup</button><br><br>
+				<span class="psw"> Forgot:<a class="forgot" href="#">password?</a></span>
+			
+			</div>
+		</div>
+
+		<!-- slide images -->
+		<div class="box-slide animate-right">			
+				<img src="images/slide1.jpg" class="slide fading slides img">
+				<img src="images/slide2.jpg" class="slide left slides img">			
+				<img src="images/slide3.jpg" class="slide right slides img">
+		</div>
+
+		<!-- Tracking -->
+		<div class="box-track animate-left">
+			<h4>Track shipment here: </h4>
+			<form action="tracking.php" method="post">
+				<input class="track-textbox" type="text" placeholder=" Tracking number..." ><input type="submit" value="Search" class="btn">
+			</form>
+		</div>
+
+		<!-- Info-->
+		<div class="box-about">
+			<div class="about animate-left">
+				<img src="images/faster.jpg" class="aboutimg">
+				<div class="overlay">
+				<div class="text"> <h1>Faster</h1>Hello
+				<p>"Part of our goal is to provide a faster service than other competitor."</p></div>
+				</div>
+			</div>
+			<div class="about animate-top">
+				<img src="images/cheaper.jpg" class="aboutimg">
+				<div class="overlay">
+				<div class="text"> 
+				<h1>Cheaper</h1>
+				<p>"To please our clients is to provide a cheaper price but with the same service as epxress."</p></div></div>
+			</div>
+			<div class="about animate-right">
+				
+				<img src="images/track.jpg" class="aboutimg">
+				<div class="overlay">
+				<div class="text">
+				<h1>Trackable</h1>
+				<p>"It is important to trace your products by phone or by your personal computer. We provide a track-and-trace service to better assist our clients.s"</p>
+			</div>
+				</div>
+			</div>
+   		</div>
+   		
+</form>
+		</div>
+	</div>
+
+<div id="id01" class="modal">
+  <form class="modal-content animate" action="/action_page.php" method="post">
+    <div class="container">
+    	<h1>Create Account</h1>
+    	<span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+    	<i class="fa fa-user icon"></i>
+    	<input type="text" placeholder="Enter Username" name="uname" class="sign-textbox" required><br>
+    	<i class="fa fa-key icon"></i>
+		<input type="password" placeholder="Enter Password" name="psw" class="sign-textbox" required><br>
+		<i class="fa fa-envelope icon"></i>
+		<input type="text" placeholder="Enter Email address" name="psw" class="sign-textbox" required><br><br>
+        <button type="submit" class="btn1">Create</button>
+    	<button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn cnl">Cancel</button>
+     </div>
+	</form>
+</div>
+
+<script src="js/slidepicture.js"></script>
+
+</body>
+</html>
